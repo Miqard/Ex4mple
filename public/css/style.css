@@ -38,7 +38,7 @@ nav ul{
 }
 body {
     font-family: 'Roboto', sans-serif;
-    color: var(--black);
+    color: var(--white);
     font-size: var(--font-size-base);
     background-color: #101010;
     margin: 0;
