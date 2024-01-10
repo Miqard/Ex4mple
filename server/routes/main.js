@@ -6,22 +6,33 @@ router.get('',(req, res) => {
     const locals = {
         title: "Threads"
     }
-    res.render('index', { locals });
+    res.render('home', { locals });
 });
 
 router.get('/search', (req, res) => {
-    res.render('search');
+    const locals = {
+      title: "Search • Threads"
+    }
+    res.render('search', { locals });
 });
 
-router.get('/activity', (req, res) => {
-    res.render('activity');
+router.get('/message', (req, res) => {
+  const locals = {
+    title: "Messages • Threads"
+  }
+  res.render('message', { locals });
+});
+
+router.get('/notification', (req, res) => {
+  const locals = {
+    title: "Notification • Threads"
+  }
+    res.render('notification', { locals });
 });
 
 router.get('/profile', (req, res) => {
-  // (E) READ JSON FILE
-  fs.readFile("data/profile_agra.json", "utf8", (err, data) => {
+  fs.readFile("data/profile_user.json", "utf8", (err, data) => {
     if (err) {
-      // (F) HANDLE ERROR
       res.status(500).send("Error reading user.json");
     } else {
       // (G) PARSE JSON DATA

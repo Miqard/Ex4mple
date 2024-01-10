@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
 
+:root{
+    --gray: #1C1C1C;
+    --white: #F1F1F1;
+    --black: #101010;
+    --light-gray: #323333;
+    --font-size-base: 1rem;
+    --border-radius: 10px;
+}
+
 nav ul{
     list-style-type: none;
     display: flex;
@@ -7,6 +16,71 @@ nav ul{
     align-items: center;
 }
 
+.user-home{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    border-bottom: 1.5px solid #323333 ;
+}
+.user-profile{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #323333;
+    border-radius: 100%;
+    margin-right: 15px;
+    /* overflow: hidden; */
+    /* padding-bottom: 1rem; */
+}
+.new-post-home{
+    /* flex-direction: column; */
+    width: 100%;
+    color: #717171;
+}
+.posts{
+    border-bottom: 1.5px solid var(--light-gray);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.post-button{
+    background-color: #313232;
+    color: #fff;
+    border: none;
+    padding: 20px 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-top: 10;
+    font-weight: bold;
+}
+.user-post-img{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #323333;
+    border-radius: 100%;
+    margin-right: 15px;
+    overflow: hidden;
+    padding-bottom: 1rem;
+}
+.post-desc{
+    color: #fff;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+}
+.user-post-name{
+    font-weight: bold;
+
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--gray);
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
 .header__nav ul {
     list-style-type: none;
     display: flex;
@@ -14,7 +88,7 @@ nav ul{
     height: 4rem;
     padding: 0;
     position: sticky;
-    border-bottom: 1.5px solid ;
+    border-bottom: 1.5px solid var(--light-gray) ;
 }
 
 .header__nav ul a{
@@ -28,14 +102,7 @@ nav ul{
     border-radius: 10px;
 }
 
-:root{
-    --gray: #1C1C1C;
-    --white: #F1F1F1;
-    --black: #101010;
-    --light-gray: #323333;
-    --font-size-base: 1rem;
-    --border-radius: 10px;
-}
+
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--white);
@@ -71,3 +138,12 @@ img{
     padding: 10px 0;
    /* border: 5px solid gray; */
 }
+
+.interactions{
+    padding-left: 3rem;
+}
+
+/* .interactions:hover{
+    background-color: var(--gray);
+    border-radius: 10px;
+} */

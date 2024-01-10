@@ -20,20 +20,148 @@
 </html> -->
 
 
-<div class="main">
+<!-- <div class="main">
     <h1 class="main__heading"></h1>
     <p class="main__body"></p>
 </div>
 <nav>
-        <div class="user-profile">
+        <div class="profile">
             <h1>User Profile</h1>
-            <h3>Username: <%= user.username %></h3>
             <h3>Name: <%= user.name %></h3>
-            <h3>Gender: <%= user.gender %></h3>
-            <h3>Location: <%= user.location %></h3>
+            <h4>Username: <%= user.username %></h4>
             <h3>Bio: <%= user.bio %></h3>
             <h3>Followers: <%= user.followers %></h3>
             <h3>Posts: <%= user.posts %></h3>
         </div>
    
-</nav>
+</nav> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #101010; /* Updated background color */
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center content horizontally */
+      justify-content: flex-start; /* Align content to the top */
+      height: 100vh;
+    }
+
+    .profile-container {
+      text-align: left; /* Align text content to the left */
+      margin-top: 20px;
+    }
+
+    .user-name {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; /* Align user-name content to the left and user-img to the right */
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      width: 100%;
+    }
+
+    .user-img {
+      width: 60px;
+      height: auto;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-left: 10px;
+    }
+
+    .user-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .username {
+      font-size: 18px;
+      color:white;
+      /* margin-top: 1rem; */
+    }
+
+    .bio {
+      margin-top: 50px;
+      font-size: 14px;
+      color: white;
+    }
+
+    .followers-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; /* Align followers count and settings icon */
+      margin-top: 20px; /* Increased margin between bio and followers */
+      font-size: 16px;
+      color: #555;
+      width: 100%;
+    }
+
+    .settings-icon {
+      width: 20px;
+      height: 20px;
+      margin-left: 5px;
+      cursor: pointer;
+    }
+
+    .edit-profile-button {
+      background-color: transparent;
+      color: #fff;
+      padding: 10px 20px;
+      border: 1px solid #323333;
+      border-radius: 5px;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .profile-toggle {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 20px;
+      border-bottom: 3px solid #313232;
+      padding-bottom: 10px;
+    }
+
+    .toggle-option {
+      color: #fff;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="profile-container">
+    <div class="user-name">
+      Mike
+      <div class="user-img">
+        <img src="/img/user.jpg">
+      </div>
+    </div>
+    <div class="username">mike123</div>
+    <div class="bio">Hello, I love cats and games!</div>
+    <div class="followers-container">
+      <span class="followers">1065 followers</span>
+      <img src="/img/setting-icon.png" class="settings-icon">
+  </div>
+  <button class="edit-profile-button">Edit Profile</button>
+  <div class="profile-toggle">
+    <div class="toggle-option">Threads</div>
+    <div class="toggle-option">Repost</div>
+    <div class="toggle-option">Likes</div>
+  </div>
+</div>
+
+</body>
+</html>

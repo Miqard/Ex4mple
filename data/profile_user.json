@@ -1,0 +1,24 @@
+[
+    {
+        "username": "@sample_user00",
+        "name": "Melpas Rues",
+        "age": 29,
+        "gender": "Male",
+        "location": "New York, USA",
+        "bio": "I love books, games, and cats.",
+        "followers": 893,
+        "following": 1065,
+        "posts": 13
+    },
+    {
+        "username": "@sample_user00",
+        "name": "Melpas Rues",
+        "age": 29,
+        "gender": "Male",
+        "location": "New York, USA",
+        "bio": "I love books, games, and cats.",
+        "followers": 893,
+        "following": 1065,
+        "posts": 13
+    }
+]
