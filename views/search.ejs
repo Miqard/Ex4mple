@@ -117,7 +117,7 @@
         <div class="user-details">
           <div class="user-name"> <%=profile['name']%> </div>
           <div class="user-description"> <%=profile['bio']%> </div>
-          <div class="followers"><%=profile['followers']%></div> 
+          <div class="followers"><%=profile['followers']%> followers</div> 
         </div>  
         <button class="follow-btn">Follow</button>
       </div>
@@ -127,3 +127,47 @@
 
 </body>
 </html>
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local JSON Search</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
+
+    #fileInput {
+      margin-bottom: 10px;
+    }
+
+    #searchInput {
+      padding: 8px;
+      font-size: 16px;
+    }
+
+    #searchResults {
+      margin-top: 20px;
+    }
+
+    .resultItem {
+      cursor: pointer;
+      padding: 5px;
+      border: 1px solid #ccc;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <input type="file" id="fileInput" accept=".json" />
+  <br />
+  <input type="text" id="searchInput" placeholder="Search...">
+  <div id="searchResults"></div>
+
+  <script src="/public/js/search.js"></script>
+</body>
+</html> -->

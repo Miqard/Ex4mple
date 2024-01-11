@@ -2,7 +2,7 @@
     {
         "username": "user_1",
         "name": "Hisyam",
-        "age": 29,
+        "age": 2,
         "gender": "Male",
         "location": "New York, USA",
         "bio": "I love books, games, and cats.",
@@ -11,6 +11,7 @@
         "posts": 13
     },
     {
+
         "username": "user_2",
         "name": "Raihan",
         "age": 4,
@@ -39,6 +40,50 @@
         "gender": "Male",
         "location": "Jakarta",
         "bio": "I love godzilla",
+        "followers": 700,
+        "following": 400,
+        "posts": 12
+    },
+    {
+        "username": "user_5",
+        "name": "May",
+        "age": 27,
+        "gender": "Female",
+        "location": "Jakarta",
+        "bio": "I love vegetables",
+        "followers": 700,
+        "following": 400,
+        "posts": 12
+    },
+    {
+        "username": "user_6",
+        "name": "Rissa",
+        "age": 17,
+        "gender": "Female",
+        "location": "Jakarta",
+        "bio": "I love Korean Dramas",
+        "followers": 700,
+        "following": 400,
+        "posts": 12
+    },
+    {
+        "username": "user_7",
+        "name": "Avian",
+        "age": 30,
+        "gender": "Male",
+        "location": "Jakarta",
+        "bio": "I love planes",
+        "followers": 700,
+        "following": 400,
+        "posts": 12
+    },
+    {
+        "username": "user_8",
+        "name": "Mike",
+        "age": 24,
+        "gender": "Male",
+        "location": "Jakarta",
+        "bio": "I love games",
         "followers": 700,
         "following": 400,
         "posts": 12
