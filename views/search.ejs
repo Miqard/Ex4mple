@@ -105,81 +105,25 @@
     <input type="text" class="search-input" placeholder="Search">
     <button class="search-btn">Search</button>
   </div>
-  Recomended User
 
-  <div class="user-preview">
-    <div class="user-img">
-      <img src="/img/instagram-logo.png" alt="Instagram Logo">
-    </div>
-    <div class="user-details">
-      <div class="user-name">Instagram</div>
-      <div class="user-description">Instagram</div>
-      <div class="followers">16.4M Followers</div> 
-    </div>  
-    <button class="follow-btn">Follow</button>
-  </div>
 
-  <div class="user-preview">
-    <div class="user-img">
-      <img src="/img/threads-logo.png" alt="Threads Logo">
-    </div>
-    <div class="user-details">
-      <div class="user-name">Threads</div>
-      <div class="user-description">Threads</div>
-      <div class="followers">2.4M Followers</div>
-    </div>
-    <button class="follow-btn">Follow</button>
-  </div>
+  <% for (key in data) { %>
+    <% var profile = data[key]; %>
 
-  <div class="user-preview">
-    <div class="user-img">
-      <img src="/img/threads-logo.png" alt="Threads Logo">
-    </div>
-    <div class="user-details">
-      <div class="user-name">Threads</div>
-      <div class="user-description">Threads</div>
-      <div class="followers">2.4M Followers</div>
-    </div>
-    <button class="follow-btn">Follow</button>
-  </div>
+    <div class="user-preview">
+        <div class="user-img">
+          <img src="/img/instagram-logo.png" alt="Instagram Logo">
+        </div>
+        <div class="user-details">
+          <div class="user-name"> <%=profile['name']%> </div>
+          <div class="user-description"> <%=profile['bio']%> </div>
+          <div class="followers"><%=profile['followers']%></div> 
+        </div>  
+        <button class="follow-btn">Follow</button>
+      </div>
 
-  <div class="user-preview">
-    <div class="user-img">
-      <img src="/img/threads-logo.png" alt="Threads Logo">
-    </div>
-    <div class="user-details">
-      <div class="user-name">Threads</div>
-      <div class="user-description">Threads</div>
-      <div class="followers">2.4M Followers</div>
-    </div>
-    <button class="follow-btn">Follow</button>
-  </div>
+  <% }; %>
 
-  <div class="user-preview">
-    <div class="user-img">
-      <img src="/img/threads-logo.png" alt="Threads Logo">
-    </div>
-    <div class="user-details">
-      <div class="user-name">Threads</div>
-      <div class="user-description">Threads</div>
-      <div class="followers">2.4M Followers</div>
-    </div>
-    <button class="follow-btn">Follow</button>
-  </div>
-
-  <div class="user-preview">
-    <div class="user-img">
-      <img src="/img/threads-logo.png" alt="Threads Logo">
-    </div>
-    <div class="user-details">
-      <div class="user-name">Threads</div>
-      <div class="user-description">Threads</div>
-      <div class="followers">2.4M Followers</div>
-    </div>
-    <button class="follow-btn">Follow</button>
-  </div>
-
-  
 
 </body>
 </html>

@@ -1,7 +1,7 @@
 [
     {
-        "username": "@sample_user00",
-        "name": "Melpas Rues",
+        "username": "user_1",
+        "name": "Hisyam",
         "age": 29,
         "gender": "Male",
         "location": "New York, USA",
@@ -11,14 +11,36 @@
         "posts": 13
     },
     {
-        "username": "@sample_user00",
-        "name": "Melpas Rues",
-        "age": 29,
+        "username": "user_2",
+        "name": "Raihan",
+        "age": 4,
         "gender": "Male",
-        "location": "New York, USA",
-        "bio": "I love books, games, and cats.",
-        "followers": 893,
-        "following": 1065,
-        "posts": 13
+        "location": "Jakarta",
+        "bio": "I love washing machine",
+        "followers": 300,
+        "following": 400,
+        "posts": 12
+    },
+    {
+        "username": "user_3",
+        "name": "Icha",
+        "age": 32,
+        "gender": "Female",
+        "location": "Jakarta",
+        "bio": "I love washing machine",
+        "followers": 300,
+        "following": 400,
+        "posts": 12
+    },
+    {
+        "username": "user_4",
+        "name": "Agra",
+        "age": 35,
+        "gender": "Male",
+        "location": "Jakarta",
+        "bio": "I love godzilla",
+        "followers": 700,
+        "following": 400,
+        "posts": 12
     }
 ]
