@@ -16,60 +16,6 @@ nav ul{
     align-items: center;
 }
 
-.user-home{
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-    border-bottom: 1.5px solid #323333 ;
-}
-.user-profile{
-    width: 50px;
-    height: 50px;
-    border: 1px solid #323333;
-    border-radius: 100%;
-    margin-right: 15px;
-    /* overflow: hidden; */
-    /* padding-bottom: 1rem; */
-}
-.new-post-home{
-    /* flex-direction: column; */
-    width: 100%;
-    color: #717171;
-}
-.posts{
-    border-bottom: 1.5px solid var(--light-gray);
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-.post-button{
-    background-color: #313232;
-    color: #fff;
-    border: none;
-    padding: 20px 20px;
-    border-radius: 40px;
-    cursor: pointer;
-    margin-top: 10;
-    font-weight: bold;
-}
-.user-post-img{
-    width: 50px;
-    height: 50px;
-    border: 1px solid #323333;
-    border-radius: 100%;
-    margin-right: 15px;
-    overflow: hidden;
-    padding-bottom: 1rem;
-}
-.post-desc{
-    color: #fff;
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-}
-.user-post-name{
-    font-weight: bold;
-
-}
 body {
     margin: 0;
     padding: 0;

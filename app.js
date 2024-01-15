@@ -20,14 +20,8 @@ app.listen(PORT, () => {
 
 
 app.get('/search', (req, res) => {
-    // Implement your search logic here
     const searchTerm = req.query.q; // Get the search term from the query string
     const searchResults = performSearch(searchTerm); // Implement your search function
     res.json(searchResults);
 });
 
-function performSearch(searchTerm) {
-    // Implement your search logic (e.g., query a database)
-    // Return search results as an array
-    return ['Result 1', 'Result 2', 'Result 3'];
-}

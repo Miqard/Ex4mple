@@ -16,7 +16,7 @@
       padding: 10px;
       color: #fff;
       width: 100%;
-      margin-top: 20px; /* Adjust margin as needed */
+      margin-top: 20px;
     }
 
     .search-icon {
@@ -27,7 +27,7 @@
       border: none;
       background-color: transparent;
       color: #fff;
-      font-size: 16px;
+      font-size: 20px;
       width: 100%;
     }
 
@@ -92,6 +92,26 @@
       cursor: pointer;
       margin-top: 10px;
     }
+
+    #searchInput {
+      padding: 8px;
+      border: none;
+      background-color: transparent;
+      color: #fff;
+      font-size: 20px;
+      width: 100%;
+    }
+
+    #searchResults {
+      margin-top: 20px;
+    }
+  .resultItem {
+      cursor: pointer;
+      padding: 5px;
+      margin-bottom: 5px;
+      border: none;
+      background-color: #0A0A0A;
+    }
     
   </style>
 </head>
@@ -101,10 +121,15 @@
     <div class="search-icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M26.25 26.25L20.8212 20.8212M20.8212 20.8212C21.7499 19.8926 22.4865 18.7902 22.989 17.5769C23.4916 16.3636 23.7503 15.0633 23.7503 13.75C23.7503 12.4367 23.4916 11.1364 22.989 9.92307C22.4865 8.70978 21.7499 7.60736 20.8212 6.67875C19.8926 5.75014 18.7902 5.01352 17.5769 4.51096C16.3636 4.0084 15.0633 3.74974 13.75 3.74974C12.4367 3.74974 11.1364 4.0084 9.92307 4.51096C8.70978 5.01352 7.60736 5.75014 6.67875 6.67875C4.80334 8.55416 3.74974 11.0978 3.74974 13.75C3.74974 16.4022 4.80334 18.9458 6.67875 20.8212C8.55416 22.6967 11.0978 23.7503 13.75 23.7503C16.4022 23.7503 18.9458 22.6967 20.8212 20.8212Z" stroke="#4D4D4D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
-        </div>
-    <input type="text" class="search-input" placeholder="Search">
+      </div>
+        <input type="text" id="searchInput" placeholder="Search...">
+    
     <button class="search-btn">Search</button>
+    
   </div>
+  <div id="searchResults"></div>
+
+  <script src="/js/search.js"></script>
 
 
   <% for (key in data) { %>
@@ -112,12 +137,12 @@
 
     <div class="user-preview">
         <div class="user-img">
-          <img src="/img/instagram-logo.png" alt="Instagram Logo">
+          <img src="<%=profile['user_img']%>">
         </div>
         <div class="user-details">
           <div class="user-name"> <%=profile['name']%> </div>
           <div class="user-description"> <%=profile['bio']%> </div>
-          <div class="followers"><%=profile['followers']%> followers</div> 
+          <div class="followers"> <%=profile['followers']%> followers</div> 
         </div>  
         <button class="follow-btn">Follow</button>
       </div>
@@ -127,47 +152,5 @@
 
 </body>
 </html>
-<!-- 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Local JSON Search</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin: 20px;
-    }
 
-    #fileInput {
-      margin-bottom: 10px;
-    }
 
-    #searchInput {
-      padding: 8px;
-      font-size: 16px;
-    }
-
-    #searchResults {
-      margin-top: 20px;
-    }
-
-    .resultItem {
-      cursor: pointer;
-      padding: 5px;
-      border: 1px solid #ccc;
-      margin-bottom: 5px;
-    }
-  </style>
-</head>
-<body>
-  <input type="file" id="fileInput" accept=".json" />
-  <br />
-  <input type="text" id="searchInput" placeholder="Search...">
-  <div id="searchResults"></div>
-
-  <script src="/public/js/search.js"></script>
-</body>
-</html> -->
