@@ -1,0 +1,36 @@
+    {
+        "username": "user_1",
+        "user_img": "/img/smpl-user1.png",
+        "name": "Hisyam",
+        "age": 2,
+        "gender": "Male",
+        "location": "New York, USA",
+        "bio": "I love books, games, and cats.",
+        "followers": 893,
+        "following": 1065,
+        "posts": 4,
+        "post_description": "True",
+        "post_img": "/img/post1.webp"
+
+    },
+    {
+        "username": "user_2",
+        "user_img": "/img/smpl-user2.png",
+        "name": "Raihan",
+        "age": 4,
+        "gender": "Male",
+        "location": "Jakarta",
+        "bio": "I love washing machine",
+        "followers": 1008,
+        "following": 473,
+        "posts": 7,
+        "post_description": "MAXIMUM POWER!!",
+        "post_img": "/img/post2.webp"
+    }
+
+0. ada list berisi elemen2 data profile user namanya profile_user
+1. user_input : Raihan
+2. loop tiap elemen didalam profile_user : 
+    a. elemen yang namanya = user_input itu adalah elemen yang dicari
+
+    

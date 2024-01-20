@@ -13,9 +13,16 @@ router.get('/',(req, res) => {
         title: "Threads",
         data      : jsondata 
     }
-    res.render('home', locals);
+    res.render('guesthome', locals);
 });
 
+router.get('/home',(req, res) => {
+  const locals = {
+      title: "Threads",
+      data      : jsondata 
+  }
+  res.render('home', locals);
+});
 
 router.get('/search', (req, res) => {
     const locals = {
@@ -59,16 +66,10 @@ router.get('/register', (req, res) => {
 
 
 router.get('/profile', (req, res) => {
-  fs.readFile("/data/profile_user.json", "utf8", (err, data) => {
-    if (err) {
-      res.status(500).send("Error reading user.json");
-    } else {
-      // (G) PARSE JSON DATA
-      let user = JSON.parse(data);
-      // (H) RENDER EJS TEMPLATE WITH USER DATA
-      res.render("profile", { user: user });
-    }
-  });
-});
+  const locals = {
+    title: "Profile • Threads"
+  }
+     res.render("profile", { locals });
+  }); 
 
 module.exports = router;

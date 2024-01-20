@@ -10,7 +10,7 @@
         "followers": 893,
         "following": 1065,
         "posts": 4,
-        "post_description": "Try it!",
+        "post_description": "True",
         "post_img": "/img/post1.webp"
 
     },
@@ -26,7 +26,7 @@
         "followers": 1008,
         "following": 473,
         "posts": 7,
-        "post_description": "Try it!",
+        "post_description": "MAXIMUM POWER!!",
         "post_img": "/img/post2.webp"
     },
     {
@@ -40,7 +40,7 @@
         "followers": 3086,
         "following": 375,
         "posts": 48,
-        "post_description": "Try it!",
+        "post_description": "why tho?",
         "post_img": "/img/post3.webp"
     },
     {
@@ -54,11 +54,12 @@
         "followers": 700,
         "following": 400,
         "posts": 37,
-        "post_description": "Try it!",
+        "post_description": "can you guess ?",
         "post_img": "/img/post4.webp"
     },
     {
         "username": "user_5",
+        "user_img": "/img/smpl-user5.png",
         "name": "May",
         "age": 27,
         "gender": "Female",
@@ -67,10 +68,12 @@
         "followers": 7863,
         "following": 1067,
         "posts": 67,
-        "post_description": "Try it!"
+        "post_description": "So Cute!!",
+        "post_img": "/img/post5.webp"
     },
     {
         "username": "user_6",
+        "user_img": "/img/smpl-user6.png",
         "name": "Rissa",
         "age": 17,
         "gender": "Female",
@@ -79,10 +82,12 @@
         "followers": 3078,
         "following": 1075,
         "posts": 106,
-        "post_description": "Try it!"
+        "post_description": "his favorite place to lay",
+        "post_img": "/img/post6.webp"
     },
     {
         "username": "user_7",
+        "user_img": "/img/smpl-user7.png",
         "name": "Avian",
         "age": 30,
         "gender": "Male",
@@ -91,10 +96,12 @@
         "followers": 2307,
         "following": 564,
         "posts": 30,
-        "post_description": "Try it!"
+        "post_description": "Can anyone answer this?",
+        "post_img": "/img/post7.webp"
     },
     {
         "username": "user_8",
+        "user_img": "/img/smpl-user8.png",
         "name": "Mike",
         "age": 24,
         "gender": "Male",
@@ -103,6 +110,7 @@
         "followers": 3245,
         "following": 790,
         "posts": 42,
-        "post_description": "Try it!"
+        "post_description": "he pray too",
+        "post_img": "/img/post8.webp"
     }
 ]
