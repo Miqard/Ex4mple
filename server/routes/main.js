@@ -1,9 +1,26 @@
 const express       = require('express');
 const router        = express.Router();
-const fs            = require("fs");
 const jsondata      = require("../../data/profile_user.json");
 const bodyParser = require('body-parser');
+const { initializeApp, applicationDefault, cert } = require('firebase-admin/app');
+const { getFirestore, Timestamp, FieldValue, Filter } = require('firebase-admin/firestore');
 
+//import {initializeApp} from 'MyProject/app'
+
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyBcEj7gW_TWHbZmjHdOLKqo2IN5ZuPizoI",
+  authDomain: "myproject-4e55f.firebaseapp.com",
+  projectId: "myproject-4e55f",
+  storageBucket: "myproject-4e55f.appspot.com",
+  messagingSenderId: "139779912170",
+  appId: "1:139779912170:web:53af2c5fc2052500284293",
+  measurementId: "G-PWEEX2KJ8W"
+};
+
+initializeApp(firebaseConfig);
+
+const db = getFirestore();
 router.use(bodyParser.urlencoded({ extended: false }));
 router.use(bodyParser.json());
 
