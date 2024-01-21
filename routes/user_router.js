@@ -1,29 +1,19 @@
 const express = require('express');
 const router = express.Router();
 const bodyParser = require('body-parser');
-
+const userController = require('../controller/user_controller');
+const searchController = require('../controller/search_controller');
+const messageConntroller = require('../controller/messages_controller');
+const notificationConntroller = require('../controller/notification_controller');
 router.use(bodyParser.urlencoded({ extended: false }));
 router.use(bodyParser.json());
 
-router.get('/login', (req, res) => {
-  const locals = {
-    title: "Login • Threads"
-  }
-  res.render('login', { locals });
-});
+router.get('/login', userController.login);
+router.get('/register', userController.register);
+router.get('/profile', userController.userDetails);
+router.get('/search', searchController.searchUser);
+router.get('/message', messageConntroller.messageUser);
+router.get('/notification', notificationConntroller.notificationUser);
 
-router.get('/register', (req, res) => {
-  const locals = {
-    title: "Register • Threads"
-  }
-  res.render('register', { locals });
-});
-
-router.get('/profile', (req, res) => {
-  const locals = {
-    title: "Profile • Threads"
-  }
-  res.render("profile", { locals });
-});
 
 module.exports = router;

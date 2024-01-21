@@ -14,6 +14,7 @@
         "post_img": "/img/post1.webp"
 
     },
+
     {
 
         "username": "user_2",
@@ -29,6 +30,7 @@
         "post_description": "MAXIMUM POWER!!",
         "post_img": "/img/post2.webp"
     },
+
     {
         "username": "user_3",
         "user_img": "/img/smpl-user3.png",
@@ -43,6 +45,7 @@
         "post_description": "why tho?",
         "post_img": "/img/post3.webp"
     },
+    
     {
         "username": "user_4",
         "user_img": "/img/smpl-user4.png",
